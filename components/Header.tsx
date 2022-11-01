@@ -36,7 +36,7 @@ const Header = (props: Props) => {
           <p className="headerLink">Sell</p>
           <p className="headerLink">Watchlist</p>
 
-          <Link href="/addItem" className="flex items-center hover:link">
+          <Link href="/addItems" className="flex items-center hover:link">
             Add to Inventory <ChevronDownIcon className="h-4" />
           </Link>
 
@@ -65,12 +65,12 @@ const Header = (props: Props) => {
           <ChevronDownIcon className="h-4 flex-shrink-0" />
         </button>
 
-        <div className="flex items-center space-x-2 px-2 md:px-5 py-2 border-white  border-2 flex-1">
-          <MagnifyingGlassIcon className="w-5 text-gray-400" />
+        <div className="flex items-center space-x-2 px-2 md:px-5 py-2 rounded-full bg-zinc-700 flex-1">
+          <MagnifyingGlassIcon className="w-5 text-gray-300" />
           <input
             type="text"
             placeholder="Search for Anything"
-            className="flex-1 outline-none bg-cus_black text-white placeholder-gray-400"
+            className="flex-1 outline-none bg-zinc-700 text-white placeholder-gray-300"
           />
         </div>
 
@@ -78,7 +78,7 @@ const Header = (props: Props) => {
           Search
         </button>
 
-        <Link href="/create">
+        <Link href="/createListing">
           <button className="border-2  border-cus_blue px-4 md:px-10 py-2 text-cus_blue hover:bg-cus_blue/50 hover:text-white cursor-pointer font-semibold focus:outline-none active:scale-90  duration-200">
             List Item
           </button>
