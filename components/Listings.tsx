@@ -18,7 +18,6 @@ const Listings = (props: Props) => {
   const { data: listings, isLoading: loadingListings } =
     useActiveListings(contract);
 
-  console.log(listings);
   return (
     <main className="max-w-6xl mx-auto py-2 px-6">
       {loadingListings ? (

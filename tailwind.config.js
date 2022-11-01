@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         cus_black: "#000002",
-        cus_blue: "#35baee",
+        cus_blue: "#397fd6",
         cus_violet: "#e300dc",
         cus_red: "#e45411",
       },
