@@ -28,14 +28,15 @@ const Listings = (props: Props) => {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mx-auto">
           {listings?.map((listing) => (
-            <Link href={`/listing/${listing.id}`}>
-              <div
-                className="flex flex-col card hover:scale-105 transition-all duration-200 ease-out"
-                key={listing.id}
-              >
+            <Link
+              key={listing.id}
+              href={`/listing/${listing.id}`}
+              className="flex  flex-col card hover:scale-105 transition-all duration-200 ease-out"
+            >
+              <div>
                 <div className="flex flex-1 flex-col pb-2 justify-center  items-center">
                   <MediaRenderer
-                    className="w-full "
+                    className="w-full lg:max-h-[10rem]"
                     src={listing.asset.image}
                   />
                 </div>
